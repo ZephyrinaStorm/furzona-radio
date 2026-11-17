@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: personal-radio-youtube
+    runtime: docker
+    plan: standard
+    envVars:
+      - key: YOUTUBE_SERVER_URL
+        value: rtmps://a.rtmps.youtube.com/live2
+      - key: YOUTUBE_STREAM_KEY
+        sync: false
+      - key: YOUTUBE_BACKUP_SERVER_URL
+        value: ""
