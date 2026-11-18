@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 stop = threading.Event()
 child = None
-SONG_FILE = Path('/tmp/radio-now-playing.txt')
+SONG_FILE = Path('https://furzona.radio/listen/clubradio/stream.mp3')
 
 def write_song(text):
     temporary = SONG_FILE.with_suffix('.tmp')
